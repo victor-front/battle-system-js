@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+    min-height: 100%;
+}
+
+body{
+    background-color: #111;
+    color: #ddd;
+    font-family: Arial, Helvetica, Verdana, sans-serif;
+}
+
+.window{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #ddd;
+    width: 640px;
+    height: 360px;
+    margin: 5em auto;
+}
+
+.battle-chat{
+    border: 5px solid #ddd;
+    padding: 10px;
+    font-size: 1.2em;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.battle-placar{
+    border: 5px solid #ddd;
+    margin: 10px;
+    padding: 10px;
+    font-size: 1.2em;
+    border-radius: 5px;
+}
+
+.placar-titles, .placar-values{
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px 100px;
+    justify-content: center;
+    transform: translateY(-20px);
+    list-style: none;
+    width: 100%;
+}
+
+.placar-titles p, .placar-values p{
+    background-color: #111;
+    display: inline;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+main{
+    flex: 1 0 auto;
+}
+
+footer{
+    flex-shrink: 0;
+}
