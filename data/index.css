@@ -23,7 +23,7 @@ body{
     flex-direction: column;
     border: 2px solid #ddd;
     width: 640px;
-    height: 360px;
+    height: 420px;
     margin: 5em auto;
 }
 
@@ -35,6 +35,25 @@ body{
     border-radius: 5px;
 }
 
+.battle-enemies{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+}
+
+.battle-enemy{
+    display: flex;
+    margin: 10px;
+    width: 120px;
+    height: 150px;
+    image-rendering: pixelated;
+    background-image: url("img/rozhevonk.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
 .battle-placar{
     border: 5px solid #ddd;
     margin: 10px;
@@ -43,11 +62,15 @@ body{
     border-radius: 5px;
 }
 
-.placar-titles, .placar-values{
+.placar-titles{
+    transform: translateY(-20px);
+    margin-bottom: -15px;
+}
+
+.placar-titles, .values-char{
     display: grid;
     grid-template-columns: 100px 100px 100px 100px 100px;
     justify-content: center;
-    transform: translateY(-20px);
     list-style: none;
     width: 100%;
 }
@@ -57,6 +80,39 @@ body{
     display: inline;
     padding-left: 5px;
     padding-right: 5px;
+}
+
+.battle-controle{
+    display: grid;
+    grid-template-columns: 120px 300px;
+    grid-template-rows: 50px 300px;
+}
+
+.controle-selecionado{
+    display: flex;
+    justify-content: cover;
+    border: 5px solid #ddd;
+    padding: 10px;
+    margin: 0px 10px 0px 10px;
+    border-radius: 5px;
+}
+
+.controle-selecionado p{
+    width: 100%;
+    text-align: center;
+}
+
+.controle-select-action{
+    display: flex;
+    height: 100%;
+    padding: 10px;
+    border: 5px solid #ddd;
+    border-radius: 5px;
+}
+
+.controle-select-action ul{
+    display: flex;
+    list-style: none;
 }
 
 main{

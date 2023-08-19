@@ -1,0 +1,11 @@
+1 ==========================
+
+Primeiramente irei fazer o setup do projeto, o esqueleto, como ficaria.
+2 ==========================
+
+Irei separar os elementos da batalha por componentes e objetos.
+3 ==========================
+
+Irei fazer as funções de formas distintas, primeiramente as testando. 
+O que vai definir mesmo a batalha será o turno, na virada de turno, 
+os valores gerais serão modificados e alguns resetados.
